@@ -17,7 +17,7 @@ export function useLocalStorage<T>(
       if (item) {
         setStoredValue(JSON.parse(item));
       }
-    } catch (error) {
+    } catch {
       // Error reading localStorage
     }
   }, [key]);
@@ -35,7 +35,7 @@ export function useLocalStorage<T>(
       if (typeof window !== "undefined") {
         window.localStorage.setItem(key, JSON.stringify(valueToStore));
       }
-    } catch (error) {
+    } catch {
       // Error setting localStorage
     }
   };

@@ -31,7 +31,7 @@ export const useAuthStore = create<AuthState>()(
         
         setLoading: (loading) => set({ isLoading: loading }),
         
-        login: async (email: string, password: string) => {
+        login: async () => {
           set({ isLoading: true });
           try {
             // TODO: Implement actual Supabase auth
@@ -66,7 +66,7 @@ export const useAuthStore = create<AuthState>()(
           }
         },
         
-        signUp: async (email: string, password: string) => {
+        signUp: async () => {
           set({ isLoading: true });
           try {
             // TODO: Implement actual Supabase auth
