@@ -109,6 +109,14 @@ This application follows modern Next.js best practices with a clean, scalable ar
 - **Removed unused variables**: Proper parameter handling in auth store
 - **Updated error handling**: Simplified catch blocks without unused variables
 
+### 🌐 Hebrew RTL Support
+- **Complete Hebrew Translation**: All UI text translated to Hebrew
+- **RTL Layout Support**: Full right-to-left layout with proper text alignment
+- **Hebrew Typography**: Heebo font for optimal Hebrew readability
+- **Icon Direction Fixes**: Arrow icons automatically flip for RTL context
+- **Responsive RTL Design**: Proper spacing and alignment in all screen sizes
+- **HTML Language Tags**: `lang="he"` and `dir="rtl"` configured
+
 ## Architecture
 
 - `/src/app/`: Next.js App Router pages and layouts
@@ -139,6 +147,7 @@ All essential libraries are already installed and configured:
 - **@supabase/ssr**: Modern Supabase authentication
 - **prettier** + **prettier-plugin-tailwindcss**: Code formatting
 - **vitest** + **@testing-library/react** + **@testing-library/jest-dom**: Testing framework
+- **heebo**: Hebrew font for RTL support and improved Hebrew readability
 
 ### Optional Future Additions
 
@@ -181,3 +190,38 @@ npm install drizzle-orm @drizzle-team/drizzle-kit
 - Use `React.lazy()` for code splitting large components
 - Optimize images with Next.js Image component
 - Minimize bundle size with proper tree shaking
+
+### RTL (Right-to-Left) Support
+
+This application is fully configured for Hebrew RTL support:
+
+#### Current RTL Features:
+- **HTML Configuration**: `lang="he"` and `dir="rtl"` attributes set in root layout
+- **Hebrew Typography**: Heebo font loaded from Google Fonts for optimal Hebrew readability
+- **RTL Layout**: All components use `rtl:` Tailwind utilities for proper RTL spacing
+- **Icon Direction**: Arrow icons automatically rotate for RTL context using `rtl:rotate-180`
+- **Text Alignment**: Text automatically aligns right in RTL mode
+- **Responsive Design**: RTL layout works perfectly on all screen sizes
+
+#### Switching Between LTR and RTL:
+To switch back to LTR (English) in the future:
+
+1. **Update HTML attributes** in `/src/app/layout.tsx`:
+   ```typescript
+   <html lang="en" dir="ltr" suppressHydrationWarning>
+   ```
+
+2. **Update metadata** in `/src/app/layout.tsx`:
+   ```typescript
+   locale: "en_US"
+   ```
+
+3. **Translate content back to English** in all component files
+
+4. **Remove RTL-specific classes** like `rtl:space-x-reverse`, `rtl:rotate-180`, etc.
+
+#### RTL Best Practices:
+- Use `space-x-reverse` for horizontal spacing in RTL
+- Use `rtl:rotate-180` for directional icons like arrows
+- Use `rtl:ml-2 rtl:mr-0` to flip margin directions
+- Test all components in both desktop and mobile RTL layouts

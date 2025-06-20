@@ -25,7 +25,7 @@ export function CTASection() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
               >
-                Ready to Start Building?
+                מוכן להתחיל לבנות?
               </motion.h2>
               
               <motion.p
@@ -35,7 +35,7 @@ export function CTASection() {
                 viewport={{ once: true }}
                 className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
               >
-                Get started with Claude App today and ship your next project faster than ever before.
+                התחל עם אפליקצית קלוד היום ושלח את הפרויקט הבא שלך מהר מתמיד.
               </motion.p>
 
               <motion.div
@@ -46,13 +46,13 @@ export function CTASection() {
                 className="flex flex-col sm:flex-row gap-4 justify-center"
               >
                 <Button size="lg" className="text-lg px-8">
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Template
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <Download className="mr-2 h-5 w-5 rtl:ml-2 rtl:mr-0" />
+                  הורד תבנית
+                  <ArrowRight className="ml-2 h-5 w-5 rtl:mr-2 rtl:ml-0 rtl:rotate-180" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Github className="mr-2 h-5 w-5" />
-                  View on GitHub
+                  <Github className="mr-2 h-5 w-5 rtl:ml-2 rtl:mr-0" />
+                  צפה ב-GitHub
                 </Button>
               </motion.div>
 
@@ -63,7 +63,7 @@ export function CTASection() {
                 viewport={{ once: true }}
                 className="mt-12 text-sm text-muted-foreground"
               >
-                <p>Free and open source • MIT License • No vendor lock-in</p>
+                <p>חינמי וקוד פתוח • רישיון MIT • ללא נעילה לספק</p>
               </motion.div>
             </CardContent>
           </Card>

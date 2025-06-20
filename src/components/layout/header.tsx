@@ -19,41 +19,41 @@ export function Header() {
       className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <Link href="/" className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4 rtl:space-x-reverse">
+          <Link href="/" className="flex items-center space-x-2 rtl:space-x-reverse">
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
               <Code className="h-6 w-6" />
             </motion.div>
-            <span className="font-bold text-lg">Claude App</span>
+            <span className="font-bold text-lg">אפליקצית קלוד</span>
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-6 rtl:space-x-reverse">
           <Link
             href="/"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
-            Home
+            בית
           </Link>
           <Link
             href="/about"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
-            About
+            אודות
           </Link>
           <Link
             href="/contact"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
-            Contact
+            צור קשר
           </Link>
         </nav>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 rtl:space-x-reverse">
           <Button variant="ghost" size="icon" asChild className="hidden md:flex">
             <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4" />
@@ -62,8 +62,8 @@ export function Header() {
           </Button>
           
           <Button variant="outline" className="hidden md:flex">
-            <Star className="mr-2 h-4 w-4" />
-            Star
+            <Star className="mr-2 h-4 w-4 rtl:ml-2 rtl:mr-0" />
+            כוכב
           </Button>
 
           {/* Mobile menu button */}
@@ -96,25 +96,25 @@ export function Header() {
               className="block py-2 text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              בית
             </Link>
             <Link
               href="/about"
               className="block py-2 text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              אודות
             </Link>
             <Link
               href="/contact"
               className="block py-2 text-sm font-medium transition-colors hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              צור קשר
             </Link>
             <div className="pt-2 border-t">
-              <Button variant="outline" className="w-full justify-start">
-                <Github className="mr-2 h-4 w-4" />
+              <Button variant="outline" className="w-full justify-start rtl:justify-end">
+                <Github className="mr-2 h-4 w-4 rtl:ml-2 rtl:mr-0" />
                 GitHub
               </Button>
             </div>

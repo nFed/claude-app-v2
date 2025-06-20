@@ -4,28 +4,28 @@ import "./globals.css";
 import { Header, Footer } from "@/components/layout";
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Claude App - Modern Next.js Template",
-  description: "A modern, full-stack Next.js application with TypeScript, Tailwind CSS, and Supabase integration.",
-  keywords: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Supabase"],
+  title: "אפליקצית קלוד - תבנית Next.js מודרנית",
+  description: "אפליקציית Next.js מודרנית עם TypeScript, Tailwind CSS ואינטגרציה עם Supabase.",
+  keywords: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Supabase", "עברית", "RTL"],
   authors: [{ name: "Claude App" }],
   creator: "Claude App",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "he_IL",
     url: "https://claude-app.vercel.app",
-    title: "Claude App - Modern Next.js Template",
-    description: "A modern, full-stack Next.js application with TypeScript, Tailwind CSS, and Supabase integration.",
+    title: "אפליקצית קלוד - תבנית Next.js מודרנית",
+    description: "אפליקציית Next.js מודרנית עם TypeScript, Tailwind CSS ואינטגרציה עם Supabase.",
     siteName: "Claude App",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Claude App - Modern Next.js Template",
-    description: "A modern, full-stack Next.js application with TypeScript, Tailwind CSS, and Supabase integration.",
+    title: "אפליקצית קלוד - תבנית Next.js מודרנית",
+    description: "אפליקציית Next.js מודרנית עם TypeScript, Tailwind CSS ואינטגרציה עם Supabase.",
     creator: "@claude-app",
   },
 };
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="he" dir="rtl" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
         <div className="flex min-h-screen flex-col">
           <Header />

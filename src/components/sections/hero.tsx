@@ -20,8 +20,8 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <Badge className="mb-6" variant="secondary">
-              <Sparkles className="mr-2 h-3 w-3" />
-              New features available
+              <Sparkles className="mr-2 h-3 w-3 rtl:ml-2 rtl:mr-0" />
+              תכונות חדשות זמינות
             </Badge>
           </motion.div>
 
@@ -31,9 +31,9 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
           >
-            Build Amazing Apps with{" "}
+            בנה אפליקציות מדהימות עם{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Claude App
+              אפליקצית קלוד
             </span>
           </motion.h1>
 
@@ -43,8 +43,8 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            A modern, full-stack application built with Next.js, TypeScript, Tailwind CSS, and Supabase. 
-            Everything you need to ship fast.
+            אפליקציה מודרנית מלאה שנבנתה עם Next.js, TypeScript, Tailwind CSS ו-Supabase. 
+            כל מה שאתה צריך כדי לשלוח מהר.
           </motion.p>
 
           <motion.div
@@ -54,11 +54,11 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <Button size="lg" className="text-lg px-8">
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5" />
+              התחל עכשיו
+              <ArrowRight className="ml-2 h-5 w-5 rtl:mr-2 rtl:ml-0 rtl:rotate-180" />
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8">
-              View Demo
+              צפה בדמו
             </Button>
           </motion.div>
 
@@ -69,17 +69,17 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
           >
-            <div className="flex items-center justify-center space-x-2 p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
+            <div className="flex items-center justify-center space-x-2 rtl:space-x-reverse p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
               <Zap className="h-5 w-5 text-yellow-500" />
-              <span className="font-medium">Lightning Fast</span>
+              <span className="font-medium">מהיר כברק</span>
             </div>
-            <div className="flex items-center justify-center space-x-2 p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
+            <div className="flex items-center justify-center space-x-2 rtl:space-x-reverse p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
               <Shield className="h-5 w-5 text-green-500" />
-              <span className="font-medium">Secure by Default</span>
+              <span className="font-medium">מאובטח כברירת מחדל</span>
             </div>
-            <div className="flex items-center justify-center space-x-2 p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
+            <div className="flex items-center justify-center space-x-2 rtl:space-x-reverse p-4 rounded-lg bg-background/50 backdrop-blur-sm border">
               <Sparkles className="h-5 w-5 text-purple-500" />
-              <span className="font-medium">Modern Stack</span>
+              <span className="font-medium">טכנולוגיה מודרנית</span>
             </div>
           </motion.div>
         </div>

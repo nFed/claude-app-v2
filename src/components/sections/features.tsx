@@ -17,50 +17,50 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const features = [
   {
     icon: Code,
-    title: "TypeScript Ready",
-    description: "Built with TypeScript for better developer experience and type safety.",
+    title: "מוכן ל-TypeScript",
+    description: "נבנה עם TypeScript לחוויית מפתח טובה יותר ובטיחות טיפוסים.",
     color: "text-blue-500",
   },
   {
     icon: Database,
-    title: "Supabase Integration",
-    description: "Powerful backend-as-a-service with real-time subscriptions and auth.",
+    title: "אינטגרציה עם Supabase",
+    description: "שירות backend חזק עם מנויים בזמן אמת ואימות.",
     color: "text-green-500",
   },
   {
     icon: Palette,
-    title: "Beautiful UI",
-    description: "Crafted with Tailwind CSS and Radix UI components for stunning interfaces.",
+    title: "ממשק יפהפה",
+    description: "נוצר עם Tailwind CSS וקומפוננטים של Radix UI לממשקים מדהימים.",
     color: "text-purple-500",
   },
   {
     icon: Zap,
-    title: "Performance First",
-    description: "Optimized for speed with Next.js 15 and modern best practices.",
+    title: "ביצועים במקום הראשון",
+    description: "מותאם למהירות עם Next.js 15 וטכניקות מודרניות.",
     color: "text-yellow-500",
   },
   {
     icon: Shield,
-    title: "Secure by Design",
-    description: "Security headers, authentication, and data protection built-in.",
+    title: "מאובטח מעצם העיצוב",
+    description: "כותרות אבטחה, אימות והגנת מידע מובנים.",
     color: "text-red-500",
   },
   {
     icon: Globe,
-    title: "SEO Optimized",
-    description: "Server-side rendering and meta tags for better search visibility.",
+    title: "מותאם ל-SEO",
+    description: "רינדור בצד השרת ותגי מטא לנראות טובה יותר בחיפוש.",
     color: "text-indigo-500",
   },
   {
     icon: Smartphone,
     title: "Mobile First",
-    description: "Responsive design that works perfectly on all devices.",
+    description: "עיצוב רספונסיבי שעובד בצורה מושלמת על כל המכשירים.",
     color: "text-pink-500",
   },
   {
     icon: TestTube,
-    title: "Testing Ready",
-    description: "Comprehensive testing setup with Vitest and Testing Library.",
+    title: "מוכן לבדיקות",
+    description: "הגדרת בדיקות מקיפה עם Vitest ו-Testing Library.",
     color: "text-cyan-500",
   },
 ];
@@ -77,9 +77,9 @@ export function FeaturesSection() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold tracking-tight mb-6"
           >
-            Everything You Need to{" "}
+            כל מה שאתה צריך כדי{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Ship Fast
+              לשלוח מהר
             </span>
           </motion.h2>
           <motion.p
@@ -89,7 +89,7 @@ export function FeaturesSection() {
             viewport={{ once: true }}
             className="text-xl text-muted-foreground"
           >
-            A complete full-stack solution with modern tools and best practices
+            פתרון מלא ומקיף עם כלים מודרניים וטכניקות עבודה מיטביות
           </motion.p>
         </div>
 
@@ -104,7 +104,7 @@ export function FeaturesSection() {
             >
               <Card className="h-full hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 rtl:space-x-reverse">
                     <div className="p-2 rounded-lg bg-background border">
                       <feature.icon className={`h-5 w-5 ${feature.color}`} />
                     </div>
