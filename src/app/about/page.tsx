@@ -99,6 +99,119 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Technology Stack Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container">
+          <motion.div
+            {...fadeInUp}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">הטכנולוגיות שלנו</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              אנו משתמשים במגוון טכנולוגיות מתקדמות ומודרניות ליצירת פתרונות איכותיים ומהימנים
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Frontend Framework</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Next.js 15</Badge>
+                  <Badge variant="secondary">React 18</Badge>
+                  <Badge variant="secondary">TypeScript</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    מסגרת עבודה מתקדמת לבניית אפליקציות web מהירות ואמינות
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">UI & Styling</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Tailwind CSS</Badge>
+                  <Badge variant="secondary">Radix UI</Badge>
+                  <Badge variant="secondary">Framer Motion</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    כלים מתקדמים לעיצוב ממשק משתמש נגיש ואטרקטיבי
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.3 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">State Management</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Zustand</Badge>
+                  <Badge variant="secondary">React Query</Badge>
+                  <Badge variant="secondary">React Hook Form</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    ניהול מצב יעיל וטיפול בנתונים באפליקציה
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Backend & Database</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Supabase</Badge>
+                  <Badge variant="secondary">PostgreSQL</Badge>
+                  <Badge variant="secondary">Real-time APIs</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    פלטפורמת backend מתקדמת עם בסיס נתונים מהיר ואמין
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.5 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Development Tools</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Vitest</Badge>
+                  <Badge variant="secondary">ESLint</Badge>
+                  <Badge variant="secondary">Prettier</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    כלי פיתוח לבדיקת איכות קוד ותחזוקת סטנדרטים גבוהים
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.6 }}>
+              <Card className="h-full hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg">Validation & Utils</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <Badge variant="secondary">Zod</Badge>
+                  <Badge variant="secondary">Class Variance Authority</Badge>
+                  <Badge variant="secondary">Lucide Icons</Badge>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    כלי עזר לוולידציה, ניהול קלאסים וסט אייקונים מקצועי
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="py-20">
         <div className="container">
