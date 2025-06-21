@@ -85,15 +85,15 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               אודות אפליקצית קלוד
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed break-words">
               אנו חברה טכנולוגית ישראלית המתמחה בפיתוח פתרונות תוכנה מתקדמים.
               המטרה שלנו היא ליצור כלים דיגיטליים שמקלים על החיים ומשפרים את הפרודוקטיביות
               של המשתמשים שלנו.
             </p>
             <div className="flex flex-wrap gap-2 justify-center">
-              <Badge variant="secondary" className="text-base px-4 py-2">טכנולוגיה מתקדמת</Badge>
-              <Badge variant="secondary" className="text-base px-4 py-2">עיצוב ישראלי</Badge>
-              <Badge variant="secondary" className="text-base px-4 py-2">חדשנות</Badge>
+              <Badge variant="secondary" className="text-sm md:text-base px-2 md:px-4 py-1 md:py-2">טכנולוגיה מתקדמת</Badge>
+              <Badge variant="secondary" className="text-sm md:text-base px-2 md:px-4 py-1 md:py-2">עיצוב ישראלי</Badge>
+              <Badge variant="secondary" className="text-sm md:text-base px-2 md:px-4 py-1 md:py-2">חדשנות</Badge>
             </div>
           </motion.div>
         </div>
@@ -107,22 +107,24 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">הטכנולוגיות שלנו</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto break-words">
               אנו משתמשים במגוון טכנולוגיות מתקדמות ומודרניות ליצירת פתרונות איכותיים ומהימנים
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 mb-16">
             <motion.div {...fadeInUp} transition={{ delay: 0.1 }}>
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-lg">Frontend Framework</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Next.js 15</Badge>
-                  <Badge variant="secondary">React 18</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Next.js 15</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">React 18</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">TypeScript</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     מסגרת עבודה מתקדמת לבניית אפליקציות web מהירות ואמינות
                   </p>
                 </CardContent>
@@ -135,10 +137,12 @@ export default function AboutPage() {
                   <CardTitle className="text-lg">UI & Styling</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Tailwind CSS</Badge>
-                  <Badge variant="secondary">Radix UI</Badge>
-                  <Badge variant="secondary">Framer Motion</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Tailwind CSS</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Radix UI</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Framer Motion</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     כלים מתקדמים לעיצוב ממשק משתמש נגיש ואטרקטיבי
                   </p>
                 </CardContent>
@@ -151,10 +155,12 @@ export default function AboutPage() {
                   <CardTitle className="text-lg">State Management</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Zustand</Badge>
-                  <Badge variant="secondary">React Query</Badge>
-                  <Badge variant="secondary">React Hook Form</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Zustand</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">React Query</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">React Hook Form</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     ניהול מצב יעיל וטיפול בנתונים באפליקציה
                   </p>
                 </CardContent>
@@ -167,10 +173,12 @@ export default function AboutPage() {
                   <CardTitle className="text-lg">Backend & Database</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Supabase</Badge>
-                  <Badge variant="secondary">PostgreSQL</Badge>
-                  <Badge variant="secondary">Real-time APIs</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Supabase</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">PostgreSQL</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Real-time APIs</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     פלטפורמת backend מתקדמת עם בסיס נתונים מהיר ואמין
                   </p>
                 </CardContent>
@@ -183,10 +191,12 @@ export default function AboutPage() {
                   <CardTitle className="text-lg">Development Tools</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Vitest</Badge>
-                  <Badge variant="secondary">ESLint</Badge>
-                  <Badge variant="secondary">Prettier</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Vitest</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">ESLint</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Prettier</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     כלי פיתוח לבדיקת איכות קוד ותחזוקת סטנדרטים גבוהים
                   </p>
                 </CardContent>
@@ -199,10 +209,12 @@ export default function AboutPage() {
                   <CardTitle className="text-lg">Validation & Utils</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Badge variant="secondary">Zod</Badge>
-                  <Badge variant="secondary">Class Variance Authority</Badge>
-                  <Badge variant="secondary">Lucide Icons</Badge>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary" className="text-xs md:text-sm">Zod</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Class Variance Authority</Badge>
+                    <Badge variant="secondary" className="text-xs md:text-sm">Lucide Icons</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2 break-words">
                     כלי עזר לוולידציה, ניהול קלאסים וסט אייקונים מקצועי
                   </p>
                 </CardContent>
@@ -220,7 +232,7 @@ export default function AboutPage() {
             className="max-w-4xl mx-auto text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">המשימה שלנו</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed break-words">
               אנו מאמינים שטכנולוגיה צריכה להיות נגישה, אינטואיטיבית ומועילה לכולם.
               המשימה שלנו היא לפתח פתרונות שמקרבים בין טכנולוגיה מתקדמת לבין
               הצרכים האמיתיים של המשתמשים, תוך דגש על חוויית משתמש מעולה ועיצוב
@@ -228,7 +240,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-8">
             <motion.div
               {...fadeInUp}
               transition={{ delay: 0.1 }}
@@ -282,7 +294,7 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">הערכים שלנו</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto break-words">
               הערכים שלנו מנחים אותנו בכל החלטה ופעולה שאנו מבצעים
             </p>
           </motion.div>
@@ -292,7 +304,7 @@ export default function AboutPage() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6"
           >
             {values.map((value, index) => (
               <motion.div key={index} variants={fadeInUp}>
@@ -323,7 +335,7 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">המסע שלנו</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto break-words">
               מבט על הדרך שעברנו ועל האבני הדרך החשובות בפיתוח החברה
             </p>
           </motion.div>
@@ -338,15 +350,15 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex items-center mb-12 last:mb-0"
               >
-                <div className="flex-shrink-0 w-16 md:w-20 text-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold mx-auto mb-2">
+                <div className="flex-shrink-0 w-14 md:w-20 text-center">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold mx-auto mb-2 text-sm md:text-base">
                     {milestone.year.slice(-2)}
                   </div>
-                  <div className="text-sm text-muted-foreground font-medium">
+                  <div className="text-xs md:text-sm text-muted-foreground font-medium">
                     {milestone.year}
                   </div>
                 </div>
-                <div className="flex-grow rtl:mr-4 rtl:ml-0 mr-0 ml-4 md:rtl:mr-8 md:ml-8">
+                <div className="flex-grow rtl:mr-3 rtl:ml-0 mr-0 ml-3 md:rtl:mr-8 md:ml-8">
                   <Card>
                     <CardHeader>
                       <CardTitle className="text-xl">{milestone.title}</CardTitle>
