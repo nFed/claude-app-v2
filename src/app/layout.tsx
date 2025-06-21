@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   keywords: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Supabase", "עברית", "RTL"],
   authors: [{ name: "Claude App" }],
   creator: "Claude App",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+  },
   openGraph: {
     type: "website",
     locale: "he_IL",
