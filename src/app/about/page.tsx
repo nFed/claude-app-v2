@@ -338,7 +338,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex items-center mb-12 last:mb-0"
               >
-                <div className="flex-shrink-0 w-20 text-center">
+                <div className="flex-shrink-0 w-16 md:w-20 text-center">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold mx-auto mb-2">
                     {milestone.year.slice(-2)}
                   </div>
@@ -346,7 +346,7 @@ export default function AboutPage() {
                     {milestone.year}
                   </div>
                 </div>
-                <div className="flex-grow rtl:mr-8 rtl:ml-0 mr-0 ml-8">
+                <div className="flex-grow rtl:mr-4 rtl:ml-0 mr-0 ml-4 md:rtl:mr-8 md:ml-8">
                   <Card>
                     <CardHeader>
                       <CardTitle className="text-xl">{milestone.title}</CardTitle>
